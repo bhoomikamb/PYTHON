@@ -37,3 +37,5 @@ else:
         print("Eaten by beasts.GAME OVER!!")
     elif cc=="yellow":
         print("You found the treasure!. YOU WIN!!!!")
+    else:
+        print("INVALID!!")
