@@ -1,5 +1,5 @@
 #=====================================================================
-#PERSONAL INFORMATION
+#------------------------PERSONAL INFORMATION------------------------
 #=====================================================================
 name=input("Enter your name:")
 college=input("Enter your College:")
@@ -20,7 +20,7 @@ wish=" ".join(words)
 print(wish)
 
 #==================================================================
-#TEXT ANALYZER
+#--------------------TEXT ANALYZER--------------------------
 #==================================================================
 sentence=input("Enter a statement:")
 print("Number of characters:",len(sentence))
@@ -34,7 +34,7 @@ print(sentence.upper())
 print(sentence.lower())
 
 #================================================================
-#USERNAME GENERATOR
+#--------------------USERNAME GENERATOR--------------------------
 #================================================================
 first_name=input("Enter your First Name:")
 last_name=input("Enter your Last Name:")
@@ -43,7 +43,9 @@ username=(first_name[:4]+last_name[0:]+ str(birth_year))
 print(username)
 
 #================================================================
-#PASSWORD VALIDATOR
+#---------------------BONUS CHALLENGE---------------------------
+#----------------------PASSWORD VALIDATOR-----------------------
+#================================================================
 password=input("Enter your password:")
 if len(password)>=8:
     print("Minimum length:OK")

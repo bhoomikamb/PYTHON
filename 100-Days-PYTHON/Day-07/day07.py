@@ -1,9 +1,9 @@
 #=================================================================
 #-----------------SAFE CALCULATOR-------------------------------
 #==================================================================
-a=int(input("Enter a first number:"))
-b=int(input("Enter a second number:"))
-try:
+try:  
+    a=int(input("Enter a first number:"))
+    b=int(input("Enter a second number:"))
     c=a/b
 except ValueError:
     print("Enter the number in digits only")
@@ -28,11 +28,11 @@ else:
 #==================================================================
 #-------------------------SAFE LIST ACCESS------------------------
 #==================================================================
-even_num=[2,4,6,8,10]
-index=int(input("Enter a index of list:"))
 try:
+    even_num=[2,4,6,8,10]
+    index=int(input("Enter a index of list:"))
     print("Element of my index is",even_num[index])
-except TypeError:
+except IndexError:
     print("Please Enter a valid index of the list!!")
 else:
     print("The element of index is:",even_num[index])

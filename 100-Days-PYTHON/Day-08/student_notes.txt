@@ -1,0 +1,5 @@
+Krishna = 900
+Bhoomika M B = 743
+Sachin A G = 600
+Mithun Gowda = 800
+Kandamma = 900 
