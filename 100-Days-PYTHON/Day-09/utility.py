@@ -1,0 +1,9 @@
+while True:
+    def celsius_to_fahrenheit(c):
+        return (c*9/5)+32
+    def fahrenheit_to_celsius(f):
+        return (f-32)*5/9
+    def kilometer_to_meter(km):
+        return km*1000
+    def meter_to_kilometer(m):
+        return m/1000
