@@ -72,13 +72,15 @@ class ATM:
     def deposit(self,amount):
         if amount>0:
             self.__balance += amount
+            print("Amount deposited successfully")
         else:
             print("Amount can't be Negative!!")
     def withdraw(self,amount):
         if amount>0 and amount<=self.__balance:
             self.__balance-=amount
+            print("Amount withdrawn successfully!!")
         else:
-            print("Your Balance is not enough,Please Enter Valid Amount!!")
+            print("Insufficient Balance / Invalid Amount!!")
     def change_pin(self,pin,new_pin,confirm_pin):
         if pin!=self.__pin:
             print("Incorrect old PIN!")
@@ -88,15 +90,17 @@ class ATM:
             return
         self.__pin=new_pin
         print("PIN changed Successfully!!")
-    def display(self):
-        print("Current PIN:",self.__pin)
-        print("Balance:",self.__balance)
+        def display(self):
+            print("Balance:",self.__balance)
+atm=ATM("1002",5000)
 pin=input("Enter old PIN:")
 new_pin=input("enter new PIN:")
 confirm_pin=input("Confirm new PIN:")
-atm=ATM(1002,5000)
-atm.verify_pin(1002)
-atm.deposit(10000)
-atm.withdraw(2000)
-atm.display()
-atm.change_pin(pin,new_pin,confirm_pin)
+if atm.verify_pin(pin):
+    print("Correct PIN!")
+    atm.deposit(10000)
+    atm.withdraw(2000)
+    print("Current Balance:",atm.check_balance())
+    atm.change_pin(pin,new_pin,confirm_pin)
+else:
+    print("Incorrect PIN!!")
