@@ -96,6 +96,7 @@ atm=ATM("1002",5000)
 pin=input("Enter old PIN:")
 new_pin=input("enter new PIN:")
 confirm_pin=input("Confirm new PIN:")
+<<<<<<< HEAD
 if atm.verify_pin(pin):
     print("Correct PIN!")
     atm.deposit(10000)
@@ -104,3 +105,12 @@ if atm.verify_pin(pin):
     atm.change_pin(pin,new_pin,confirm_pin)
 else:
     print("Incorrect PIN!!")
+=======
+atm=ATM(1002,5000)
+atm.verify_pin(1002)
+atm.deposit(10000)
+atm.withdraw(2000)
+atm.display()
+atm.change_pin(pin,new_pin,confirm_pin)
+print("End of Day-12 Challenge") 
+>>>>>>> 8f88ad4fded7ed874fae413df361d504e2c68d0f

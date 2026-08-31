@@ -95,4 +95,4 @@ class Library:
 lib=Library()
 lib.add_book(book1)
 lib.display_books()
-print("End of Week-10 CHALLENGE!!")
+print("End of Day-10 CHALLENGE!!")
