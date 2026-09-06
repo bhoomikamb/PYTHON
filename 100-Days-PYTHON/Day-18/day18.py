@@ -56,3 +56,6 @@ new_robots={name:int(speed+((speed*20)/100))
                  for name,speed in robots.items()
                 }
 print("Dictionary with increased speed by 20%",new_robots)
+print("------------------------------------------------------------------------------------------")
+print("------------------------End of Day-18 Python Challenges-----------------------------------")
+print("------------------------------------------------------------------------------------------")
