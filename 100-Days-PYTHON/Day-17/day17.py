@@ -8,6 +8,7 @@ num=[x*5 for x in numbers]
 print("Square of numbers:",squares)
 print("Cubes of numbers:",cubes)
 print("Numbers multiplied by 5:",num)
+print("------------------------------------------------------------------------------------")
 
 #===========================================================================================
 #-----------------------------------EVEN NUMBER FILTER--------------------------------------
@@ -19,6 +20,7 @@ odd_num=[x for x in numbers if x%2!=0]
 print("Odd numbers:",odd_num)
 great_num=[x for x in numbers if x>40]
 print("Numbers greater than 40:",great_num)
+print("-----------------------------------------------------------------------------------")
 
 #==========================================================================================
 #--------------------------------------STUDENT MARKS---------------------------------------
@@ -30,6 +32,7 @@ above=[x for x in marks if x>80]
 print("List of students scored above 80:",above)
 grade=["Pass" if x>=32 else "Fail" for x in marks]
 print("List of Every marks whether student is passed or not:",grade)
+print("------------------------------------------------------------------------------------")
 
 #==========================================================================================
 #-----------------------------------BONUS CHALLENGE----------------------------------------
@@ -44,3 +47,5 @@ c=["obstacle" if x<20 else "Clear" for x in distance]
 print(c)
 c=[x*2 for x in distance]
 print("Hypothetical Calibration Factor:",c)
+print("------------------------------------------------------------------------------------")
+print("-----------------------End of Day-17 Python Challenges------------------------------")
