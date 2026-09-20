@@ -1,0 +1,10 @@
+INFO:root:Robot Started!
+INFO:root:Sensor Checking..
+WARNING:root:Onstacle detected!
+INFO:root:Robot Stopped!!
+INFO:root:Safe Distance:15
+WARNING:root:Obstacle nearby:25
+INFO:root:Safe Distance:10
+WARNING:root:Obstacle nearby:50
+INFO:root:Safe Distance:8
+INFO:root:Robot stopped!

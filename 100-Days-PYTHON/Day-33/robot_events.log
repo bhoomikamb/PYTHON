@@ -1,0 +1,6 @@
+INFO:root:Robot initialised
+INFO:root:Motor started
+INFO:root:Sensor activated
+WARNING:root:Obstacle detected!
+INFO:root:Robot stopped!!
+INFO:root:Robot shut down
