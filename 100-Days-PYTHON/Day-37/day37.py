@@ -54,7 +54,7 @@ cursor.execute("""SELECT students.name,marks.subject,marks.marks
 FROM students 
 INNER JOIN marks 
 ON students.student_id=marks.student_id
-WHERE students.name=?""",("Bhoomi",))
+WHERE students.name=?""",(name,))
 results=cursor.fetchall()
 for result in results:
     print(result)
