@@ -12,7 +12,7 @@ print("------------------------------------------------------------------------"
 print("---------------------- Check every mark --------------------------------")
 print("------------------------------------------------------------------------")
 marks=[45,67,32,80]
-print(all(mark>= 35 for mark in marks))
+print(all(mark>= 35 for mark in marks)) #Returns true if the condition is true for all elements in the list
 print("-----------------------------------------------------------------------")
 
 #Challenge-03
@@ -20,7 +20,7 @@ print("------------------------------------------------------------------------"
 print("---------------------- Check passwords ---------------------------------")
 print("------------------------------------------------------------------------")
 passwords=["hello","python123","abc"]
-print(any(len(password)>=8 for password in passwords))
+print(any(len(password)>=8 for password in passwords)) #Returns true if any one element agrees the condition 
 print("-----------------------------------------------------------------------")
 
 #Challenge-04
@@ -30,3 +30,6 @@ print("------------------------------------------------------------------------"
 temperatures=[25,38,42,19]
 print("Is temperature exceeds 40",any(temp>=40 for temp in temperatures))
 print("Is temperature exceeds 0",any(temp>0 for temp in temperatures))
+print("-----------------------------------------------------------------------")
+print("--------------------- End of Day-43 Challenge -------------------------")
+print("-----------------------------------------------------------------------")
