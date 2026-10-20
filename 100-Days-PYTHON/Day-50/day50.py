@@ -28,7 +28,7 @@ print("------------------------------------------------------")
 msg="Bhoomi scored 95 marks in 3 subjects"
 out=re.sub(r"\d","#",msg) #Replacing numbers by #
 print(out)
-print("-----------------------------------------------------")
+print("------------------------------------------------------")
 
 #Challenge-04
 print("------------------------------------------------------")
@@ -46,6 +46,14 @@ if re.fullmatch(pattern,phone_num):
     print("Valid Number")
 else:
     print("Invalid Number")
+
+#Challenge-05
+print("------------------------------------------------------")
+print("------------------ Extract Hashtags ------------------")
+print("------------------------------------------------------")
+text="I love #Python and #Coding! Learning #100DaysOfCode is fun."
+result=re.findall(r"#\w+",text)
+print(result)
 print("------------------------------------------------------")
 print("-------------- End of Day-50 Challenges --------------")
 print("------------------------------------------------------")
