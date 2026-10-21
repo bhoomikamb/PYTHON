@@ -59,6 +59,7 @@ for number in numbers:
     remainder=number % 3
     groups[remainder].append(number)
 print(dict(groups))
+print("---------------------------------------------------------------------")
 print("--------------------- End of Day-51 Challenges ----------------------")
 print("---------------------------------------------------------------------")
 #End of Day-51 Challenges
