@@ -48,7 +48,17 @@ for word in words:
     first_letter=word[0]
     groups[first_letter].append(word)
 print(dict(groups))
+
+#Challenge-05
 print("---------------------------------------------------------------------")
+print("----------------- Group Numbers by their Remainder ------------------")
+print("---------------------------------------------------------------------")
+numbers=[10,12,14,15,17,18,20,21]
+groups=defaultdict(list)
+for number in numbers:
+    remainder=number % 3
+    groups[remainder].append(number)
+print(dict(groups))
 print("--------------------- End of Day-51 Challenges ----------------------")
 print("---------------------------------------------------------------------")
 #End of Day-51 Challenges
